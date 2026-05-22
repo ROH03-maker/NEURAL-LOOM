@@ -41,10 +41,10 @@ export const FeaturedProjects: React.FC = () => {
                 id={`project-card-${proj.id}`}
                 onMouseEnter={handleHoverCard}
                 whileHover={{ y: -8 }}
-                className="group border border-white/5 bg-cyber-dark rounded-2xl overflow-hidden shadow-2xl relative flex flex-col justify-between"
+                className="group border border-white/5 bg-cyber-dark rounded-2xl overflow-hidden shadow-2xl relative flex flex-col justify-between hover:border-amber-400/30 hover:bg-gradient-to-b hover:from-amber-400/[0.03] hover:to-cyber-dark hover:shadow-[0_0_35px_rgba(245,158,11,0.22)] transition-all duration-300"
               >
                 {/* Decorative glow overlay block inside card */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-purple opacity-30 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-purple opacity-30 group-hover:from-amber-500 group-hover:via-yellow-400 group-hover:to-amber-600 group-hover:opacity-100 transition-all duration-500" />
                 
                 {/* Card visual frame */}
                 <div>
@@ -57,30 +57,30 @@ export const FeaturedProjects: React.FC = () => {
                     />
                     
                     {/* Corner badge category */}
-                    <div className="absolute top-3 right-3 text-[8px] font-mono tracking-widest bg-space-black/90 text-neon-cyan px-2.5 py-1 rounded border border-neon-cyan/20 uppercase">
+                    <div className="absolute top-3 right-3 text-[8px] font-mono tracking-widest bg-space-black/90 text-neon-cyan group-hover:text-amber-300 group-hover:border-amber-500/30 px-2.5 py-1 rounded border border-neon-cyan/20 uppercase transition-all duration-300">
                       ARTIFACT_{String(idx + 1).padStart(2, "0")}
                     </div>
                   </div>
 
                   {/* Card textual block */}
                   <div className="p-6">
-                    <h3 className="text-lg font-display font-bold text-white tracking-widest group-hover:text-neon-cyan transition-colors uppercase">
+                    <h3 className="text-lg font-display font-bold text-white tracking-widest group-hover:text-amber-300 transition-colors uppercase">
                       {proj.title}
                     </h3>
-                    <p className="text-[10px] font-mono text-neon-purple mt-0.5 tracking-wider uppercase">
+                    <p className="text-[10px] font-mono text-neon-purple mt-0.5 tracking-wider uppercase group-hover:text-amber-400/80 transition-colors duration-300">
                       {proj.tagline}
                     </p>
 
-                    <p className="text-xs text-gray-400 mt-4 leading-relaxed font-sans font-light">
+                    <p className="text-xs text-gray-400 mt-4 leading-relaxed font-sans font-light group-hover:text-gray-300 transition-colors duration-300">
                       {proj.description}
                     </p>
 
                     {/* Meta specifications lists */}
-                    <div className="mt-6 pt-4 border-t border-white/5 flex flex-col gap-2 font-mono text-[9px]">
+                    <div className="mt-6 pt-4 border-t border-white/5 flex flex-col gap-2 font-mono text-[9px] group-hover:border-amber-400/10 transition-colors duration-300">
                       {proj.specs.map((s, sIdx) => (
                         <div key={sIdx} className="flex justify-between">
                           <span className="text-gray-500 uppercase">{s.label}:</span>
-                          <span className="text-gray-300 font-bold uppercase">{s.value}</span>
+                          <span className="text-gray-300 font-bold uppercase group-hover:text-amber-200 transition-colors duration-300">{s.value}</span>
                         </div>
                       ))}
                     </div>
