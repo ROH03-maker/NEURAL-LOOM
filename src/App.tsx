@@ -183,23 +183,23 @@ export default function App() {
                 <motion.div
                   onMouseEnter={handleHoverInteractive}
                   whileHover={{ y: -6 }}
-                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between"
+                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between group hover:border-amber-400/30 hover:bg-gradient-to-b hover:from-amber-400/[0.04] hover:to-transparent hover:shadow-[0_0_30px_rgba(245,158,11,0.18)] transition-all duration-300"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-neon-blue/5 border border-neon-blue/20 flex items-center justify-center text-neon-blue mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-neon-blue/5 border border-neon-blue/20 flex items-center justify-center text-neon-blue mb-6 group-hover:bg-amber-400/10 group-hover:border-amber-400/40 group-hover:text-amber-300 group-hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-all duration-300">
                       <Cpu size={20} />
                     </div>
-                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest">
+                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest group-hover:text-amber-100 transition-colors duration-300">
                       Autonomous Intelligence
                     </h3>
-                    <p className="text-[10px] font-mono text-neon-cyan mt-0.5 tracking-wider uppercase">
+                    <p className="text-[10px] font-mono text-neon-cyan mt-0.5 tracking-wider uppercase group-hover:text-amber-300/80 transition-colors duration-300">
                       COGNITIVE_CORE_V4
                     </p>
-                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed">
+                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                       Employing programmatic intent crawlers and micro-agent frameworks to optimize creative execution boundaries. Weaving complex concepts seamlessly into production assets.
                     </p>
                   </div>
-                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase">
+                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase group-hover:text-amber-300/40 group-hover:border-amber-400/10 transition-colors duration-300">
                     SYS_LOAD: 12.8% OVERALL
                   </div>
                 </motion.div>
@@ -208,23 +208,23 @@ export default function App() {
                 <motion.div
                   onMouseEnter={handleHoverInteractive}
                   whileHover={{ y: -6 }}
-                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between"
+                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between group hover:border-amber-400/30 hover:bg-gradient-to-b hover:from-amber-400/[0.04] hover:to-transparent hover:shadow-[0_0_30px_rgba(245,158,11,0.18)] transition-all duration-300"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-neon-purple/5 border border-neon-purple/20 flex items-center justify-center text-neon-purple mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-neon-purple/5 border border-neon-purple/20 flex items-center justify-center text-neon-purple mb-6 group-hover:bg-amber-400/10 group-hover:border-amber-400/40 group-hover:text-amber-300 group-hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-all duration-300">
                       <Workflow size={20} />
                     </div>
-                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest">
+                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest group-hover:text-amber-100 transition-colors duration-300">
                       Intelligent UI Layers
                     </h3>
-                    <p className="text-[10px] font-mono text-neon-purple mt-0.5 tracking-wider uppercase">
+                    <p className="text-[10px] font-mono text-neon-purple mt-0.5 tracking-wider uppercase group-hover:text-amber-300/80 transition-colors duration-300">
                       INTERACTION_CANVAS_TOKEN
                     </p>
-                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed">
+                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                       Custom fluid layout calculations centered entirely around user behaviors, visual contrast guidelines, and physics-driven scroll indicators. Beautiful responsive scaling on every pixel.
                     </p>
                   </div>
-                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase">
+                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase group-hover:text-amber-300/40 group-hover:border-amber-400/10 transition-colors duration-300">
                     COMPILED: ESM_COMPLIANT
                   </div>
                 </motion.div>
@@ -233,23 +233,23 @@ export default function App() {
                 <motion.div
                   onMouseEnter={handleHoverInteractive}
                   whileHover={{ y: -6 }}
-                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between"
+                  className="glass-panel p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col justify-between group hover:border-amber-400/30 hover:bg-gradient-to-b hover:from-amber-400/[0.04] hover:to-transparent hover:shadow-[0_0_30px_rgba(245,158,11,0.18)] transition-all duration-300"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex items-center justify-center text-green-400 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-500/5 border border-emerald-500/20 flex items-center justify-center text-green-400 mb-6 group-hover:bg-amber-400/10 group-hover:border-amber-400/40 group-hover:text-amber-300 group-hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-all duration-300">
                       <Code size={20} />
                     </div>
-                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest">
+                    <h3 className="text-base font-display font-bold text-white uppercase tracking-widest group-hover:text-amber-100 transition-colors duration-300">
                       Advanced Web Synthetics
                     </h3>
-                    <p className="text-[10px] font-mono text-green-450 mt-0.5 tracking-wider uppercase">
+                    <p className="text-[10px] font-mono text-green-450 mt-0.5 tracking-wider uppercase group-hover:text-amber-300/80 transition-colors duration-300">
                       CREATIVE_ENGINE_LOGIC
                     </p>
-                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed">
+                    <p className="mt-4 text-xs text-gray-400 font-sans leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                       High-fidelity client-only architectures compiled with absolute clean code, optimized web audio synthesizer grids, and vector tracking math maps that load instantly.
                     </p>
                   </div>
-                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase">
+                  <div className="mt-6 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 uppercase group-hover:text-amber-300/40 group-hover:border-amber-400/10 transition-colors duration-300">
                     RENDER: LIGHTWEIGHT_HTML5
                   </div>
                 </motion.div>
