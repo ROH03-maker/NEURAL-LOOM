@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Orbitron', 'Space Grotesk', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-orbitron: 'Orbitron', sans-serif;
+  
+  --color-neon-blue: #00d2ff;
+  --color-neon-cyan: #06b6d4;  /* Sleek Interface Cyan-500 equivalent */
+  --color-neon-purple: #9d50bb;
+  --color-space-black: #050505; /* Sleek Interface black */
+  --color-cyber-dark: #0a0a0a;  /* Sleek ultra-black */
+}
+
+/* Custom Avengers typography slant & metallic reflections */
+.avengers-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, #ffffff 15%, #b5c6e0 45%, #ffffff 55%, #475a7a 85%, #8fa3c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: skewX(-12deg);
+  display: inline-block;
+  line-height: 0.95;
+  filter: drop-shadow(0 0 10px rgba(0, 210, 255, 0.15));
+}
+
+.avengers-text-simple {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  transform: skewX(-10deg);
+}
+
+/* Custom Base & Utilities */
+@layer base {
+  body {
+    background-color: #050505;
+    color: #E0E0E0;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #222 #050505;
+  }
+}
+
+/* Custom styles for the futuristic design */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}
+
+/* Dynamic glow effect classes */
+.neon-text-blue {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.4), 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 10px rgba(157, 80, 187, 0.4), 0 0 20px rgba(157, 80, 187, 0.15);
+}
+
+.glow-border-blue {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.glow-border-purple {
+  box-shadow: 0 0 15px rgba(157, 80, 187, 0.1);
+  border: 1px solid rgba(157, 80, 187, 0.25);
+}
+
+.glow-border-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.glass-panel {
+  background: rgba(8, 8, 8, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Sleek Interface radial dot grid pattern */
+.grid-lines {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+/* Hide cursor on desktop if utilizing the custom cursor */
+@media (min-width: 1024px) {
+  .custom-cursor-active {
+    cursor: none;
+  }
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active [role="button"] {
+    cursor: none;
+  }
+}
