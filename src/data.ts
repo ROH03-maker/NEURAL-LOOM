@@ -148,7 +148,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     tagline: "Immersive Particle Space Simulation",
     description: "A highly complex, custom interactive canvas. Simulates cosmic spatial curvature with heavy vector rendering, allowing visitors to bend and warp standard web layout segments by dragging elements.",
     technologies: ["TypeScript", "Canvas Render", "Math Physics Engine"],
-    imageUrl: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "Vortex Gravitational Field.png",
     specs: [
       { label: "Physics", value: "Multi-point Gravity" },
       { label: "Grid distortion", value: "Symmetric Trigonometric" },
