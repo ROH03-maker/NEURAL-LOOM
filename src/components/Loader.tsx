@@ -246,28 +246,66 @@ export const Loader: React.FC<LoaderProps> = ({ onComplete }) => {
             {/* Pulsing Core Sphere */}
             <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-[#021822] via-[#020d1e] to-[#12031a] flex flex-col items-center justify-center relative shadow-[0_0_30px_rgba(6,182,212,0.15)] overflow-hidden">
               {/* Neural Loom Custom Vector Logo */}
-              <svg viewBox="0 0 100 100" className="w-12 h-12 text-cyan-400 drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]" fill="none" stroke="currentColor" strokeWidth="2">
-                {/* Outer Hexagonal Shield Frame */}
-                <polygon points="50,15 80,32 80,68 50,85 20,68 20,32" stroke="url(#blue-pink-gradient)" strokeWidth="1.5" strokeLinejoin="round" className="opacity-40 animate-pulse" />
+              <svg viewBox="0 0 100 100" className="w-16 h-16 text-cyan-400 drop-shadow-[0_0_15px_rgba(6,182,212,0.6)]" fill="none" stroke="currentColor" strokeWidth="2">
+                {/* Advanced Technical Alignment Rings */}
+                <circle cx="50" cy="50" r="44" stroke="#ffffff" strokeWidth="0.5" strokeDasharray="1 5" className="opacity-30" />
+                <circle cx="50" cy="50" r="40" stroke="url(#blue-pink-gradient)" strokeWidth="0.8" className="opacity-20 animate-[spin_20s_linear_infinite]" />
+                <circle cx="50" cy="50" r="36" stroke="#06b6d4" strokeWidth="0.5" strokeDasharray="6 12" className="opacity-45 animate-[spin_10s_linear_infinite_reverse]" />
                 
-                {/* Weaving lines connecting opposite vertices (the Loom background effect) */}
-                <path d="M20 32 L80 68" stroke="url(#pink-blue-gradient)" strokeWidth="0.8" strokeDasharray="4 2" className="opacity-40" />
-                <path d="M80 32 L20 68" stroke="url(#blue-pink-gradient)" strokeWidth="0.8" strokeDasharray="4 2" className="opacity-40" />
-                <path d="M50 15 L50 85" stroke="#06b6d4" strokeWidth="1" strokeDasharray="1 3" className="opacity-30" />
+                {/* The Loom shuttle vertical and horizontal guidance crosshairs */}
+                <line x1="50" y1="6" x2="50" y2="16" stroke="#f472b6" strokeWidth="1" className="opacity-50" />
+                <line x1="50" y1="84" x2="50" y2="94" stroke="#f472b6" strokeWidth="1" className="opacity-50" />
+                <line x1="6" y1="50" x2="16" y2="50" stroke="#06b6d4" strokeWidth="1" className="opacity-50" />
+                <line x1="84" y1="50" x2="94" y2="50" stroke="#06b6d4" strokeWidth="1" className="opacity-50" />
+
+                {/* Weaving Neural Threads (Intricate double infinity loop representing Loom & Synapse) */}
+                {/* Thread Alpha (Cyan) */}
+                <motion.path 
+                  d="M 28 50 C 28 35, 42 32, 50 50 C 58 68, 72 65, 72 50 C 72 35, 58 32, 50 50 C 42 68, 28 65, 28 50 Z" 
+                  stroke="#06b6d4" 
+                  strokeWidth="2.5" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                  className="opacity-95"
+                  animate={{ strokeDashoffset: [0, -100] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                  style={{ strokeDasharray: "20 5 10 5" }}
+                />
                 
-                {/* Neural Sine Waves / Synaptic Weavings */}
-                <path d="M30 50 Q 40 28, 50 50 T 70 50" stroke="#ec4899" strokeWidth="2" strokeLinecap="round" className="opacity-90" />
-                <path d="M30 50 Q 40 72, 50 50 T 70 50" stroke="#06b6d4" strokeWidth="2" strokeLinecap="round" className="opacity-90" />
+                {/* Thread Beta (Pink) */}
+                <motion.path 
+                  d="M 50 50 C 42 32, 28 35, 28 50 C 28 65, 42 68, 50 50 C 58 32, 72 35, 72 50 C 72 65, 58 68, 50 50 Z" 
+                  stroke="#ec4899" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                  className="opacity-90"
+                  animate={{ strokeDashoffset: [0, 100] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                  style={{ strokeDasharray: "15 5 15 5" }}
+                />
+
+                {/* Vertical loom warp lines behind the nodes to add that "Weaving" context */}
+                <line x1="42" y1="28" x2="42" y2="72" stroke="url(#blue-pink-gradient)" strokeWidth="0.6" strokeDasharray="2 3" className="opacity-25" />
+                <line x1="58" y1="28" x2="58" y2="72" stroke="url(#pink-blue-gradient)" strokeWidth="0.6" strokeDasharray="2 3" className="opacity-25" />
+
+                {/* Central Brain Synaptic Junction Core */}
+                <g className="animate-pulse">
+                  <circle cx="50" cy="50" r="5" fill="#ffffff" />
+                  <circle cx="50" cy="50" r="9" stroke="#ffffff" strokeWidth="1" className="opacity-50 animate-ping" />
+                </g>
+
+                {/* Interwoven Glowing Synaptic Nodes located on the intersection points */}
+                <circle cx="28" cy="50" r="3" fill="#06b6d4" className="drop-shadow-[0_0_6px_#06b6d4]" />
+                <circle cx="72" cy="50" r="3" fill="#ec4899" className="drop-shadow-[0_0_6px_#ec4899]" />
                 
-                {/* Interwoven Synaptic Nodes */}
-                <circle cx="50" cy="50" r="4.5" fill="#ffffff" className="animate-pulse" />
-                <circle cx="30" cy="50" r="2.5" fill="#06b6d4" />
-                <circle cx="70" cy="50" r="2.5" fill="#ec4899" />
-                <circle cx="40" cy="38" r="2" fill="#22d3ee" className="animate-ping" style={{ animationDuration: "3s" }} />
-                <circle cx="40" cy="38" r="1.5" fill="#22d3ee" />
-                <circle cx="60" cy="62" r="1.5" fill="#f472b6" />
-                <circle cx="60" cy="38" r="1.5" fill="#f472b6" />
-                <circle cx="40" cy="62" r="1.5" fill="#22d3ee" />
+                {/* Top and Bottom control nodes */}
+                <circle cx="50" cy="35" r="2" fill="#22d3ee" />
+                <circle cx="50" cy="65" r="2" fill="#f472b6" />
+                
+                {/* Golden/White active impulse running around */}
+                <circle cx="34" cy="40" r="1.5" fill="#ffffff" className="animate-ping" style={{ animationDuration: "1.5s" }} />
+                <circle cx="66" cy="60" r="1.5" fill="#ffffff" className="animate-ping" style={{ animationDuration: "2s" }} />
               </svg>
               <div className="text-[7px] font-mono text-cyan-400 tracking-wider font-extrabold mt-1 uppercase">{hexFlicker}</div>
               {/* Laser sweep scanner overlay */}

@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { sound } from "./SoundEngine";
-import { Radio, Heart, Cpu, ShieldAlert, Instagram, Linkedin, Github } from "lucide-react";
+import { Radio, Heart, Cpu, ShieldAlert, Instagram, Linkedin, Github, ArrowUp } from "lucide-react";
 
 export const Footer: React.FC = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleNavClick = (sectionId: string) => {
     sound.triggerInteractionClick();
     const el = document.getElementById(sectionId);
@@ -11,8 +25,25 @@ export const Footer: React.FC = () => {
     }
   };
 
+  const handleScrollToTop = () => {
+    sound.triggerInteractionClick();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-[#050505] border-t border-white/5 py-16 relative overflow-hidden grid-lines">
+      {/* Scroll to Top Floating Button */}
+      {showScrollTop && (
+        <button
+          onClick={handleScrollToTop}
+          type="button"
+          className="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-black/80 border border-neon-cyan/40 text-neon-cyan hover:text-black hover:bg-neon-cyan hover:shadow-[0_0_15px_rgba(6,182,212,0.6)] flex items-center justify-center transition-all cursor-pointer duration-300 active:scale-95 animate-pulse"
+          title="Back to Top"
+        >
+          <ArrowUp size={18} />
+        </button>
+      )}
+
       {/* Soft Ambient shadow */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-neon-cyan/5 via-neon-purple/5 to-transparent pointer-events-none" />
 
@@ -122,12 +153,29 @@ export const Footer: React.FC = () => {
             >
               <Github size={15} />
             </a>
+            <a 
+              href="https://x.com/rrrohittt_3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-amber-950 hover:bg-[#faf6e8] hover:border-amber-300/60 hover:shadow-[0_0_20px_rgba(251,191,36,0.5)] transition-all cursor-pointer duration-300 active:scale-95"
+              title="X"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
           </div>
-          <div className="text-right">
+          <div className="text-right flex flex-col items-center md:items-end gap-1">
             <span className="uppercase block">© 2026 NEURAL-LOOM LABORATORY</span>
             <span className="text-gray-600 uppercase flex items-center gap-1 mt-0.5 justify-center md:justify-end">
               &copy; 2024 Neural-Loom Ecosystem
             </span>
+            <button
+              onClick={handleScrollToTop}
+              className="mt-2 text-neon-cyan/70 hover:text-neon-cyan text-[9px] font-mono tracking-widest uppercase flex items-center gap-1.5 border border-neon-cyan/20 px-3 py-1.5 rounded-full bg-cyan-950/20 hover:bg-cyan-950/40 transition-all cursor-pointer"
+            >
+              <ArrowUp size={10} className="animate-pulse" /> BACK TO TOP
+            </button>
           </div>
         </div>
 

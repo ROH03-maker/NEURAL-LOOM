@@ -67,7 +67,7 @@ export const ContactSection: React.FC = () => {
         </svg>
       ), 
       href: "https://wa.me/918927598500", 
-      detail: "+91 8927598500", 
+      detail: "", 
       hoverBoxClass: "hover:border-emerald-500/30 hover:bg-emerald-500/5 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]",
       hoverIconClass: "group-hover:text-white group-hover:bg-emerald-500 group-hover:border-emerald-400",
       hoverTextClass: "group-hover:text-emerald-400"
@@ -76,7 +76,7 @@ export const ContactSection: React.FC = () => {
       name: "Instagram", 
       icon: <Instagram size={16} />, 
       href: "https://www.instagram.com/rrrohittt_3", 
-      detail: "@rrrohittt_3", 
+      detail: "", 
       hoverBoxClass: "hover:border-pink-500/30 hover:bg-gradient-to-r hover:from-rose-600/10 hover:to-pink-500/10 hover:shadow-[0_0_20px_rgba(244,63,94,0.4)]",
       hoverIconClass: "group-hover:text-white group-hover:bg-gradient-to-tr group-hover:from-rose-600 group-hover:to-pink-500 group-hover:border-rose-400",
       hoverTextClass: "group-hover:text-pink-400"
@@ -85,7 +85,7 @@ export const ContactSection: React.FC = () => {
       name: "GitHub", 
       icon: <Github size={16} />, 
       href: "https://github.com/roh03-maker", 
-      detail: "github.com/roh03-maker", 
+      detail: "", 
       hoverBoxClass: "hover:border-white/30 hover:bg-white/5 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
       hoverIconClass: "group-hover:text-black group-hover:bg-white group-hover:border-white",
       hoverTextClass: "group-hover:text-white"
@@ -94,10 +94,23 @@ export const ContactSection: React.FC = () => {
       name: "LinkedIn", 
       icon: <Linkedin size={16} />, 
       href: "https://www.linkedin.com/in/rohit-sarkar-3a91423b8", 
-      detail: "linkedin.com/in/rohit-sarkar-3a91423b8", 
+      detail: "", 
       hoverBoxClass: "hover:border-neon-cyan/30 hover:bg-[#06b6d4]/10 hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]",
       hoverIconClass: "group-hover:text-black group-hover:bg-neon-cyan group-hover:border-neon-cyan",
       hoverTextClass: "group-hover:text-neon-cyan"
+    },
+    { 
+      name: "X", 
+      icon: (
+        <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      ), 
+      href: "https://x.com/rrrohittt_3", 
+      detail: "", 
+      hoverBoxClass: "hover:border-white/30 hover:bg-white/5 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
+      hoverIconClass: "group-hover:text-black group-hover:bg-white group-hover:border-white",
+      hoverTextClass: "group-hover:text-white"
     }
   ];
 

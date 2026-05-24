@@ -12,6 +12,7 @@ import { VisionTimeline } from "./components/VisionTimeline";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import { NeuralCanvas } from "./components/NeuralCanvas";
+import { AboutNeuralLoom } from "./components/AboutNeuralLoom";
 
 // Lucide icon assets for about cards
 import { Cpu, Zap, Database, Sparkles, Code, AppWindow, Workflow } from "lucide-react";
@@ -254,6 +255,23 @@ export default function App() {
                   </div>
                 </motion.div>
 
+              </div>
+
+              {/* Spectacular Interactive Expanded About Section */}
+              <div className="mt-20 pt-16 border-t border-white/5">
+                <div className="mb-10 text-center max-w-xl mx-auto">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-500/[0.04] border border-pink-500/25 rounded-full text-pink-400 text-[9px] font-mono mb-4 tracking-widest uppercase">
+                    🚀 DEEP DIVE ARCHIVE
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-display font-black tracking-tight text-white uppercase">
+                    UNRAVELING THE LOOM
+                  </h3>
+                  <p className="mt-3 text-xs text-gray-400 font-sans font-light leading-relaxed">
+                    Interactive lore, historical breakthroughs, and system variables. Access classified facts and thread synaptic models below.
+                  </p>
+                </div>
+                
+                <AboutNeuralLoom />
               </div>
 
             </div>
