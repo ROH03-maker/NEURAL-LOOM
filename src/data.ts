@@ -1,4 +1,6 @@
 import { AISystem, InnovationExperiment, FeaturedProject, TimelineMilestone } from "./types";
+// @ts-ignore
+import vortexImgUrl from "./assets/images/vortex_gravitational_field_1779640752317.png";
 
 export const AI_SYSTEMS: AISystem[] = [
   {
@@ -148,7 +150,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     tagline: "Immersive Particle Space Simulation",
     description: "A highly complex, custom interactive canvas. Simulates cosmic spatial curvature with heavy vector rendering, allowing visitors to bend and warp standard web layout segments by dragging elements.",
     technologies: ["TypeScript", "Canvas Render", "Math Physics Engine"],
-    imageUrl: "Vortex Gravitational Field.png",
+    imageUrl: vortexImgUrl,
     specs: [
       { label: "Physics", value: "Multi-point Gravity" },
       { label: "Grid distortion", value: "Symmetric Trigonometric" },
