@@ -2,6 +2,8 @@
 
 Neural Loom is a futuristic web-based concept project created to explore advanced UI design, creative interaction systems, and modern frontend development techniques. The idea behind this project was to build something visually immersive and inspired by next-generation digital experiences.
 
+🔗 Live Demo: https://neural-loom.vercel.app
+
 ---
 
 ##  Why I Built Neural Loom
