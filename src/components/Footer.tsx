@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
               <Instagram size={15} />
             </a>
             <a 
-              href="https://www.linkedin.com/in/rohit-sarkar-3a91423b8" 
+              href="https://www.linkedin.com/in/rohit-sarkar-rs03" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-neon-cyan hover:border-neon-cyan hover:shadow-[0_0_20px_rgba(6,182,212,0.65)] transition-all cursor-pointer duration-300 active:scale-95"
@@ -145,7 +145,7 @@ export const Footer: React.FC = () => {
               <Linkedin size={15} />
             </a>
             <a 
-              href="https://github.com/roh03-maker" 
+              href="https://github.com/Rohitsarkarcodes" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-white hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.55)] transition-all cursor-pointer duration-300 active:scale-95"

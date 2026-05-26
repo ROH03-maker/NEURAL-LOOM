@@ -84,7 +84,7 @@ export const ContactSection: React.FC = () => {
     { 
       name: "GitHub", 
       icon: <Github size={16} />, 
-      href: "https://github.com/roh03-maker", 
+      href: "https://github.com/Rohitsarkarcodes", 
       detail: "", 
       hoverBoxClass: "hover:border-white/30 hover:bg-white/5 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
       hoverIconClass: "group-hover:text-black group-hover:bg-white group-hover:border-white",
@@ -93,7 +93,7 @@ export const ContactSection: React.FC = () => {
     { 
       name: "LinkedIn", 
       icon: <Linkedin size={16} />, 
-      href: "https://www.linkedin.com/in/rohit-sarkar-3a91423b8", 
+      href: "https://www.linkedin.com/in/rohit-sarkar-rs03", 
       detail: "", 
       hoverBoxClass: "hover:border-neon-cyan/30 hover:bg-[#06b6d4]/10 hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]",
       hoverIconClass: "group-hover:text-black group-hover:bg-neon-cyan group-hover:border-neon-cyan",
